@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 import inquirer from 'inquirer';
-const quizQuestions = await inquirer.prompt( [
+const quizQuestions = [
   {
     question: 'What is the capital of France?',
     choices: ['Paris', 'London', 'Berlin', 'Rome'],
@@ -15,7 +15,7 @@ const quizQuestions = await inquirer.prompt( [
     question: 'Who wrote "To Kill a Mockingbird"?',
     choices: ['Harper Lee', 'Jane Austen', 'Mark Twain', 'Charles Dickens'],
     answer: 'Harper Lee'
-  }]);
+  }];
 
 function shuffleArray(array: any[]) {
   for (let i = array.length - 1; i > 0; i--) {
